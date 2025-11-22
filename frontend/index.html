@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Categorization AI - GHCI 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            animation: fadeIn 0.8s ease;
+        }
+        
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        .header .subtitle {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 35px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.25);
+            margin-bottom: 20px;
+            animation: slideUp 0.6s ease;
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+        
+        .input-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 120px;
+            transition: all 0.3s;
+        }
+        
+        .input-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .result {
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+            display: none;
+            border: 2px solid #dee2e6;
+        }
+        
+        .result.show {
+            display: block;
+            animation: slideIn 0.4s ease;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .result-item {
+            margin-bottom: 20px;
+        }
+        
+        .result-item label {
+            display: block;
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .result-item .value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .category-icon {
+            font-size: 2rem;
+        }
+        
+        .confidence-bar {
+            height: 40px;
+            background: #e0e0e0;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 10px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        .explanation-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+            margin-top: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .explanation-box strong {
+            color: #667eea;
+            font-size: 1.1rem;
+        }
+        
+        .explanation-box p {
+            margin-top: 8px;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .keyword-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+            animation: popIn 0.3s ease;
+        }
+        
+        @keyframes popIn {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+        
+        .original-text {
+            color: #666;
+            font-style: italic;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            margin-top: 10px;
+            border: 1px dashed #ddd;
+        }
+        
+        .feedback-section {
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 2px solid #dee2e6;
+        }
+        
+        .feedback-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .feedback-btn {
+            flex: 1;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .feedback-btn.correct {
+            background: #4CAF50;
+            color: white;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+        
+        .feedback-btn.correct:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+        }
+        
+        .feedback-btn.wrong {
+            background: #f44336;
+            color: white;
+            box-shadow: 0 4px 15px rgba(244, 67, 54, 0.3);
+        }
+        
+        .feedback-btn.wrong:hover {
+            background: #da190b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(244, 67, 54, 0.4);
+        }
+        
+        .examples {
+            margin-top: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .examples h3 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        
+        .example-btn {
+            display: inline-block;
+            padding: 10px 18px;
+            margin: 5px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .example-btn:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+        
+        .loader {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-card h4 {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .alert {
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: slideIn 0.4s ease;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .alert.success {
+            background: #d4edda;
+            color: #155724;
+            border-left: 4px solid #28a745;
+        }
+
+        .alert.error {
+            background: #f8d7da;
+            color: #721c24;
+            border-left: 4px solid #dc3545;
+        }
+
+        .alert-icon {
+            font-size: 1.5rem;
+        }
+
+        .tip {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #856404;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            padding: 20px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI Transaction Categorizer</h1>
+            <p>Automatically categorize financial transactions with 85%+ accuracy</p>
+            <div class="subtitle">GHCI 2025 Hackathon Project | End-to-End AI Solution</div>
+        </div>
+        
+        <div class="card">
+            <div class="input-group">
+                <label for="transactionInput">📝 Enter Transaction Text:</label>
+                <textarea 
+                    id="transactionInput" 
+                    placeholder="Example: SWIGGY BANGALORE FOOD ORDER&#10;Example: AMAZON PRIME VIDEO SUBSCRIPTION&#10;Example: HP PETROL PUMP DIESEL"
+                ></textarea>
+            </div>
+            
+            <button class="btn" id="predictBtn" onclick="predict()">
+                <span id="btnText">🚀 Categorize Transaction</span>
+                <span id="btnLoader" style="display: none;"><div class="loader"></div></span>
+            </button>
+
+            <div class="tip">
+                💡 <strong>Tip:</strong> Press <kbd>Ctrl + Enter</kbd> to quickly categorize!
+            </div>
+            
+            <div class="examples">
+                <h3>🎯 Try These Examples:</h3>
+                <button class="example-btn" onclick="setExample('SWIGGY BANGALORE FOOD ORDER')">🍔 Food Delivery</button>
+                <button class="example-btn" onclick="setExample('AMAZON PRIME VIDEO SUBSCRIPTION')">📺 Streaming</button>
+                <button class="example-btn" onclick="setExample('HP PETROL PUMP DIESEL')">⛽ Fuel</button>
+                <button class="example-btn" onclick="setExample('APOLLO PHARMACY MEDICINES')">💊 Medical</button>
+                <button class="example-btn" onclick="setExample('UBER RIDE TO AIRPORT')">🚗 Travel</button>
+                <button class="example-btn" onclick="setExample('NETFLIX MONTHLY PAYMENT')">🎬 Entertainment</button>
+            </div>
+            
+            <div class="result" id="result">
+                <div class="result-item">
+                    <label>🎯 Predicted Category:</label>
+                    <div class="value">
+                        <span class="category-icon" id="categoryIcon">📊</span>
+                        <span id="category">-</span>
+                    </div>
+                </div>
+                
+                <div class="result-item">
+                    <label>📊 Confidence Score:</label>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" id="confidenceFill">0%</div>
+                    </div>
+                </div>
+                
+                <div class="result-item">
+                    <label>💡 Explanation:</label>
+                    <div class="explanation-box">
+                        <div id="explanation">-</div>
+                        <div class="keywords" id="keywords"></div>
+                    </div>
+                </div>
+                
+                <div class="result-item">
+                    <label>📄 Original Text:</label>
+                    <div class="original-text" id="originalText">-</div>
+                </div>
+                
+                <div class="feedback-section">
+                    <label>🤔 Was this prediction correct?</label>
+                    <div class="feedback-buttons">
+                        <button class="feedback-btn correct" onclick="submitFeedback(true)">
+                            <span>✓</span> Yes, Correct
+                        </button>
+                        <button class="feedback-btn wrong" onclick="submitFeedback(false)">
+                            <span>✗</span> No, Wrong
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="alertBox"></div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <h4>Accuracy</h4>
+                <div class="number">85%+</div>
+            </div>
+            <div class="stat-card">
+                <h4>Categories</h4>
+                <div class="number">10</div>
+            </div>
+            <div class="stat-card">
+                <h4>Response Time</h4>
+                <div class="number">&lt;50ms</div>
+            </div>
+            <div class="stat-card">
+                <h4>Predictions</h4>
+                <div class="number" id="predictionCount">0</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Built with ❤️ for GHCI 2025 Hackathon</p>
+            <p>Features: Explainability • Feedback Loop • Custom Taxonomy • 85%+ F1 Score</p>
+        </div>
+    </div>
+    
+    <script>
+        const API_URL = 'http://localhost:8000';
+        let lastPrediction = null;
+        let predictionCount = 0;
+
+        // Category icons mapping
+        const categoryIcons = {
+            'Food & Drinks': '🍔',
+            'Shopping': '🛍️',
+            'Groceries': '🛒',
+            'Fuel': '⛽',
+            'Travel': '✈️',
+            'Bills & Recharge': '💳',
+            'Entertainment': '🎬',
+            'Medical': '💊',
+            'Online Services': '💻',
+            'Banking Charges': '🏦'
+        };
+        
+        function setExample(text) {
+            document.getElementById('transactionInput').value = text;
+            document.getElementById('transactionInput').focus();
+        }
+        
+        function showAlert(message, type) {
+            const alertBox = document.getElementById('alertBox');
+            const icon = type === 'success' ? '✓' : '✗';
+            alertBox.innerHTML = `
+                <div class="alert ${type}">
+                    <span class="alert-icon">${icon}</span>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            setTimeout(() => {
+                alertBox.innerHTML = '';
+            }, 5000);
+        }
+        
+        async function predict() {
+            const input = document.getElementById('transactionInput').value.trim();
+            
+            if (!input) {
+                showAlert('⚠️ Please enter a transaction text!', 'error');
+                document.getElementById('transactionInput').focus();
+                return;
+            }
+            
+            // Show loading
+            const btn = document.getElementById('predictBtn');
+            const btnText = document.getElementById('btnText');
+            const btnLoader = document.getElementById('btnLoader');
+            
+            btn.disabled = true;
+            btnText.style.display = 'none';
+            btnLoader.style.display = 'inline';
+            
+            try {
+                const startTime = Date.now();
+                
+                const response = await fetch(`${API_URL}/predict`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        transaction_text: input
+                    })
+                });
+                
+                const responseTime = Date.now() - startTime;
+                
+                if (!response.ok) {
+                    throw new Error(`API returned ${response.status}`);
+                }
+                
+                const data = await response.json();
+                lastPrediction = data;
+                
+                // Update prediction count
+                predictionCount++;
+                document.getElementById('predictionCount').textContent = predictionCount;
+                
+                // Show category with icon
+                const categoryIcon = categoryIcons[data.predicted_category] || '📊';
+                document.getElementById('categoryIcon').textContent = categoryIcon;
+                document.getElementById('category').textContent = data.predicted_category;
+                
+                // Show original text
+                document.getElementById('originalText').textContent = data.transaction_text;
+                
+                // Show explanation
+                const explanation = data.explanation;
+                let explanationHTML = `
+                    <strong>🎯 ${explanation.confidence_level} Confidence</strong>
+                    <p>${explanation.reason}</p>
+                `;
+                
+                if (explanation.method) {
+                    explanationHTML += `<p style="font-size: 0.85rem; color: #888; margin-top: 8px;">Method: ${explanation.method}</p>`;
+                }
+                
+                document.getElementById('explanation').innerHTML = explanationHTML;
+                
+                // Show keywords
+                const keywordsContainer = document.getElementById('keywords');
+                keywordsContainer.innerHTML = '';
+                if (explanation.keywords_found && explanation.keywords_found.length > 0) {
+                    explanation.keywords_found.forEach((keyword, index) => {
+                        setTimeout(() => {
+                            const tag = document.createElement('span');
+                            tag.className = 'keyword-tag';
+                            tag.textContent = keyword;
+                            keywordsContainer.appendChild(tag);
+                        }, index * 100);
+                    });
+                } else {
+                    keywordsContainer.innerHTML = '<span style="color: #999; font-size: 0.9rem;">No specific keywords detected</span>';
+                }
+                
+                // Show confidence bar with animation
+                const confidence = Math.round(data.confidence * 100);
+                const confidenceFill = document.getElementById('confidenceFill');
+                setTimeout(() => {
+                    confidenceFill.style.width = confidence + '%';
+                    confidenceFill.textContent = confidence + '%';
+                }, 100);
+                
+                // Show result section
+                document.getElementById('result').classList.add('show');
+                
+                // Show success message
+                showAlert(`✓ Categorized successfully in ${responseTime}ms`, 'success');
+                
+            } catch (error) {
+                console.error('Prediction error:', error);
+                showAlert(`❌ Error: ${error.message}. Make sure API is running: python api/main.py`, 'error');
+            } finally {
+                // Hide loading
+                btn.disabled = false;
+                btnText.style.display = 'inline';
+                btnLoader.style.display = 'none';
+            }
+        }
+        
+        async function submitFeedback(isCorrect) {
+            if (!lastPrediction) {
+                showAlert('⚠️ No prediction to give feedback on!', 'error');
+                return;
+            }
+            
+            let correctCategory = lastPrediction.predicted_category;
+            let userComment = 'User confirmed prediction is correct';
+            
+            if (!isCorrect) {
+                correctCategory = prompt(
+                    '🤔 What is the correct category?\n\nAvailable categories:\n' +
+                    '• Food & Drinks\n• Shopping\n• Groceries\n• Fuel\n• Travel\n' +
+                    '• Bills & Recharge\n• Entertainment\n• Medical\n• Online Services\n• Banking Charges',
+                    lastPrediction.predicted_category
+                );
+                
+                if (!correctCategory) return;
+                userComment = `User corrected from "${lastPrediction.predicted_category}" to "${correctCategory}"`;
+            }
+            
+            try {
+                const response = await fetch(`${API_URL}/feedback`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        transaction_text: lastPrediction.transaction_text,
+                        predicted_category: lastPrediction.predicted_category,
+                        correct_category: correctCategory,
+                        confidence: lastPrediction.confidence,
+                        user_comment: userComment
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Feedback submission failed');
+                }
+                
+                const data = await response.json();
+                
+                if (isCorrect) {
+                    showAlert('✓ Thank you! Your feedback helps improve the model.', 'success');
+                } else {
+                    showAlert(`✓ Thank you for the correction! Feedback ID: ${data.feedback_id}`, 'success');
+                }
+                
+            } catch (error) {
+                showAlert(`❌ Failed to submit feedback: ${error.message}`, 'error');
+            }
+        }
+        
+        // Keyboard shortcuts
+        document.getElementById('transactionInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && e.ctrlKey) {
+                e.preventDefault();
+                predict();
+            }
+        });
+
+        // Check API health on page load
+        window.addEventListener('load', async () => {
+            console.log('🚀 Checking API connection...');
+            
+            try {
+                const response = await fetch(`${API_URL}/health`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('✓ API Connected:', data);
+                    
+                    if (data.model_loaded) {
+                        console.log(`✓ Model loaded with ${data.categories_count} categories`);
+                    } else {
+                        console.warn('⚠ API is running but model not loaded');
+                        showAlert('⚠️ Model not loaded. Please train the model first.', 'error');
+                    }
+                } else {
+                    throw new Error('API not responding');
+                }
+            } catch (error) {
+                console.error('⚠ API Connection Failed:', error);
+                showAlert('⚠️ API not reachable. Start server: python api/main.py', 'error');
+            }
+        });
+
+        // Auto-focus on input
+        document.getElementById('transactionInput').focus();
+    </script>
+</body>
+</html>

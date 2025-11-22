@@ -1,0 +1,541 @@
+transaction_text,category,is_augmented,processed_text,label
+late charges,Banking Charges,True,late charges,0
+adobe mumbai subscription,Online Services,True,adobe mumbai subscription,7
+id-indian oil fuel,Fuel,True,id indian oil fuel,4
+apollo pharmacy medical,Medical,True,apollo pharmacy medical,6
+indigo chennai ride,Travel,True,indigo chennai ride,9
+hotstar ch3nnai payment,Entertainment,True,hotstar ch3nnai payment,2
+Jio R3charg3 Hyd3rabad 1043,Bills & Recharge,False,jio r3charg3 hyd3rabad 1043,1
+payment to flipkart pune,Shopping,True,payment to flipkart pune,8
+ID-PharmEasy Pune 3552,Medical,False,id pharmeasy pune 3552,6
+Sp3nc3rs Bangalor3 3269,Groceries,False,sp3nc3rs bangalor3 3269,5
+reliance fresh shopping,Groceries,True,reliance fresh shopping,5
+bharat petroleum fuel,Fuel,True,bharat petroleum fuel,4
+Zomato Kolkata 4417,Food & Drinks,False,zomato kolkata 4417,3
+Jio Recharge Chennai 4540,Bills & Recharge,False,jio recharge chennai 4540,1
+KFC Hyderabad 2285,Food & Drinks,False,kfc hyderabad 2285,3
+Tata Cliq Pune 990,Shopping,False,tata cliq pune 990,8
+Fortis Bangalore 2716,Medical,False,fortis bangalore 2716,6
+reliance fresh grocery,Groceries,True,reliance fresh grocery,5
+amazon kolkata purchase,Shopping,True,amazon kolkata purchase,8
+nykaa kolkata purchase,Shopping,True,nykaa kolkata purchase,8
+bigbasket kolkata shopping,Groceries,True,bigbasket kolkata shopping,5
+irctc mumbai ride,Travel,True,irctc mumbai ride,9
+Myntra Delhi 126,Shopping,False,myntra delhi 126,8
+IndianOilChennai3185,Fuel,False,indianoilchennai3185,4
+Adobe Chennai 541,Online Services,False,adobe chennai 541,7
+Max Hospital Chennai 3467,Medical,False,max hospital chennai 3467,6
+HP Petrol Pump Delhi 4303,Fuel,False,hp petrol pump delhi 4303,4
+1mg bangalore pharmacy,Medical,True,1mg bangalore pharmacy,6
+max hospital medical,Medical,True,max hospital medical,6
+bookmyshow mumbai subscription,Entertainment,True,bookmyshow mumbai subscription,2
+ola hyderabad booking,Travel,True,ola hyderabad booking,9
+SonyLiv Delhi 3093,Entertainment,False,sonyliv delhi 3093,2
+netflix chennai subscription,Entertainment,True,netflix chennai subscription,2
+indian oil petrol pump,Fuel,True,indian oil petrol pump,4
+IRCTCChennai2787,Travel,False,irctcchennai2787,9
+flipkart kolkata purchase,Shopping,True,flipkart kolkata purchase,8
+IndiGo Mumbai 3187,Travel,False,indigo mumbai 3187,9
+Adobe Hyderabad 3069 txn,Online Services,False,adobe hyderabad 3069 txn,7
+microsoft 365 subscription,Online Services,True,microsoft 365 subscription,7
+Burger King Kolkata 2166,Food & Drinks,False,burger king kolkata 2166,3
+dm@rt b@ng@lore grocery,Groceries,True,dm rt b ng lore grocery,5
+electricity bill,Bills & Recharge,True,electricity bill,1
+Amazon Prim3 Pun3 1045,Entertainment,False,amazon prim3 pun3 1045,2
+max hospital medical,Medical,True,max hospital medical,6
+nykaa chennai 4376,Shopping,False,nykaa chennai 4376,8
+bharat petroleum petrol pump,Fuel,True,bharat petroleum petrol pump,4
+Google Cloud Hyderabad 621,Online Services,False,google cloud hyderabad 621,7
+sonyliv mumbai subscription,Entertainment,True,sonyliv mumbai subscription,2
+Zoom Subscription Pune 2542,Online Services,False,zoom subscription pune 2542,7
+Apollo Pharmacy Kolkata 2459,Medical,False,apollo pharmacy kolkata 2459,6
+ID-Air India Kolkata 702,Travel,False,id air india kolkata 702,9
+ID-Zoom Subscription Hyderabad 4772,Online Services,False,id zoom subscription hyderabad 4772,7
+bharat petroleum fuel,Fuel,True,bharat petroleum fuel,4
+bookmyshow pune payment,Entertainment,True,bookmyshow pune payment,2
+Netflix Hyderabad 1701,Entertainment,False,netflix hyderabad 1701,2
+zomato kolkata,Food & Drinks,True,zomato kolkata,3
+pharmeasy kolkata medical,Medical,True,pharmeasy kolkata medical,6
+Fortis Pune 1266,Medical,False,fortis pune 1266,6
+Spencers Kolkata 1490,Groceries,False,spencers kolkata 1490,5
+Canva Kolkata 657,Online Services,False,canva kolkata 657,7
+nykaa chennai purchase,Shopping,True,nykaa chennai purchase,8
+ATM Withdrawal Fee Hyderabad 387,Banking Charges,False,atm withdrawal fee hyderabad 387,0
+amazon prime subscription,Entertainment,True,amazon prime subscription,2
+zoom subscription service,Online Services,True,zoom subscription service,7
+atm withdrawal fee,Banking Charges,True,atm withdrawal fee,0
+electricity bill,Bills & Recharge,True,electricity bill,1
+payment to amazon chennai,Shopping,True,payment to amazon chennai,8
+uber chennai ride,Travel,True,uber chennai ride,9
+Google Cloud Delhi 1975,Online Services,False,google cloud delhi 1975,7
+HP Petrol Pump Chennai 4294,Fuel,False,hp petrol pump chennai 4294,4
+Microsoft 365 Hyderabad 2250,Online Services,False,microsoft 365 hyderabad 2250,7
+pharmeasy delhi medical,Medical,True,pharmeasy delhi medical,6
+netflix bangalore payment,Entertainment,True,netflix bangalore payment,2
+sonyliv pune subscription,Entertainment,True,sonyliv pune subscription,2
+hotstar mumbai payment,Entertainment,True,hotstar mumbai payment,2
+indianoilmumbai2620 fuel,Fuel,True,indianoilmumbai2620 fuel,4
+Fortis Kolkata 1001,Medical,False,fortis kolkata 1001,6
+ajio bangalore purchase,Shopping,True,ajio bangalore purchase,8
+dmart chennai grocery,Groceries,True,dmart chennai grocery,5
+Air Indi@ Mumb@i 658,Travel,False,air indi  mumb i 658,9
+bigbasketkolkata2445 grocery,Groceries,True,bigbasketkolkata2445 grocery,5
+late charges,Banking Charges,True,late charges,0
+CCD Delhi 2898,Food & Drinks,False,ccd delhi 2898,3
+air india ride,Travel,True,air india ride,9
+indian oil fuel,Fuel,True,indian oil fuel,4
+spencers kolkata grocery,Groceries,True,spencers kolkata grocery,5
+redbus pune booking,Travel,True,redbus pune booking,9
+mcdonalds bangalor3,Food & Drinks,True,mcdonalds bangalor3,3
+Shell Petrol Pump Kolkata 2814,Fuel,False,shell petrol pump kolkata 2814,4
+Water Bill Hyderabad 1956,Bills & Recharge,False,water bill hyderabad 1956,1
+Bharat Petroleum Bangalore 3751,Fuel,False,bharat petroleum bangalore 3751,4
+Microsoft 365 Mumbai 496,Online Services,False,microsoft 365 mumbai 496,7
+card annual fee,Banking Charges,True,card annual fee,0
+m@kemytrip pune booking,Travel,True,m kemytrip pune booking,9
+shell petrol fuel,Fuel,True,shell petrol fuel,4
+bookmyshow bangalore payment,Entertainment,True,bookmyshow bangalore payment,2
+fortis bangalore pharmacy,Medical,True,fortis bangalore pharmacy,6
+late payment fee hyderabad 2961,Banking Charges,False,late payment fee hyderabad 2961,0
+makemytripchennai3029 booking,Travel,True,makemytripchennai3029 booking,9
+Myntra Kolkata 1994,Shopping,False,myntra kolkata 1994,8
+hp petrol petrol pump,Fuel,True,hp petrol petrol pump,4
+ajio mumbai 4397,Shopping,False,ajio mumbai 4397,8
+Jio Recharge Mumbai 2544 txn,Bills & Recharge,False,jio recharge mumbai 2544 txn,1
+bigbasket kolkata shopping,Groceries,True,bigbasket kolkata shopping,5
+Bank Service Charge Chennai 4814,Banking Charges,False,bank service charge chennai 4814,0
+kfc hyderabad,Food & Drinks,True,kfc hyderabad,3
+shell petrol fuel,Fuel,True,shell petrol fuel,4
+googlecloudpune1729 service,Online Services,True,googlecloudpune1729 service,7
+water bill,Bills & Recharge,True,water bill,1
+sonyliv pune payment,Entertainment,True,sonyliv pune payment,2
+pharmeasy kolkata pharmacy,Medical,True,pharmeasy kolkata pharmacy,6
+ATM Withdrawal Fee Chennai 3638,Banking Charges,False,atm withdrawal fee chennai 3638,0
+bank service fee,Banking Charges,True,bank service fee,0
+Airtel Recharge Mumbai 395,Bills & Recharge,False,airtel recharge mumbai 395,1
+bigbasket pune shopping,Groceries,True,bigbasket pune shopping,5
+indian oil petrol pump,Fuel,True,indian oil petrol pump,4
+Netflix Pune 2424 txn,Entertainment,False,netflix pune 2424 txn,2
+1mg Bangalore 4734,Medical,False,1mg bangalore 4734,6
+Bank Service Charge Delhi 4785,Banking Charges,False,bank service charge delhi 4785,0
+Nature's Basket Pune 62,Groceries,False,nature s basket pune 62,5
+id-irctc mumbai ride,Travel,True,id irctc mumbai ride,9
+kfc delhi,Food & Drinks,True,kfc delhi,3
+indian oil fuel,Fuel,True,indian oil fuel,4
+dmart chennai shopping,Groceries,True,dmart chennai shopping,5
+spencers bangalore grocery,Groceries,True,spencers bangalore grocery,5
+bigbasket bangalore shopping,Groceries,True,bigbasket bangalore shopping,5
+atm withdrawal charges,Banking Charges,True,atm withdrawal charges,0
+fortis pune pharmacy,Medical,True,fortis pune pharmacy,6
+Jio Recharge Hyderabad 2956,Bills & Recharge,False,jio recharge hyderabad 2956,1
+Card Annual Fee Pune 1075,Banking Charges,False,card annual fee pune 1075,0
+ccd kolkata 2194,Food & Drinks,False,ccd kolkata 2194,3
+max hospital medical,Medical,True,max hospital medical,6
+ajio chennai purchase,Shopping,True,ajio chennai purchase,8
+bharat petroleum fuel,Fuel,True,bharat petroleum fuel,4
+apollo pharmacy medical,Medical,True,apollo pharmacy medical,6
+Ajio Bangalore 3648,Shopping,False,ajio bangalore 3648,8
+atm withdrawal fee,Banking Charges,True,atm withdrawal fee,0
+payment to ajio delhi,Shopping,True,payment to ajio delhi,8
+KFC Chennai 4500,Food & Drinks,False,kfc chennai 4500,3
+sonyliv pune payment,Entertainment,True,sonyliv pune payment,2
+max hospital pharmacy,Medical,True,max hospital pharmacy,6
+atm withdr@w@l fee,Banking Charges,True,atm withdr w l fee,0
+R3dBus Bangalor3 2459,Travel,False,r3dbus bangalor3 2459,9
+Jio Recharge Bangalore 1025,Bills & Recharge,False,jio recharge bangalore 1025,1
+Vodafone Bill Kolkata 1842,Bills & Recharge,False,vodafone bill kolkata 1842,1
+KFC Mumbai 889,Food & Drinks,False,kfc mumbai 889,3
+bookmyshow pune subscription,Entertainment,True,bookmyshow pune subscription,2
+Amazon Mumbai 4165,Shopping,False,amazon mumbai 4165,8
+apollo pharmacy pharmacy,Medical,True,apollo pharmacy pharmacy,6
+irctc bangalore ride,Travel,True,irctc bangalore ride,9
+Starbucks Chennai 2672,Food & Drinks,False,starbucks chennai 2672,3
+bharat petroleum petrol pump,Fuel,True,bharat petroleum petrol pump,4
+burger king,Food & Drinks,True,burger king,3
+Airtel Recharge Kolkata 4199,Bills & Recharge,False,airtel recharge kolkata 4199,1
+id-late charges,Banking Charges,True,id late charges,0
+Apollo Pharmacy Mumbai 4875,Medical,False,apollo pharmacy mumbai 4875,6
+adobe pune service,Online Services,True,adobe pune service,7
+nature's basket grocery,Groceries,True,nature s basket grocery,5
+BigBasket Kolkata 1736,Groceries,False,bigbasket kolkata 1736,5
+jio recharge,Bills & Recharge,True,jio recharge,1
+apollo pharmacy medical,Medical,True,apollo pharmacy medical,6
+Apollo Pharmacy Pun3 3220,Medical,False,apollo pharmacy pun3 3220,6
+Uber Mumbai 2613,Travel,False,uber mumbai 2613,9
+netflix kolkata subscription,Entertainment,True,netflix kolkata subscription,2
+shell petrol petrol pump,Fuel,True,shell petrol petrol pump,4
+RedBus Mumb@i 184,Travel,False,redbus mumb i 184,9
+amazon pun3 purchase,Shopping,True,amazon pun3 purchase,8
+bigbasket bangalore grocery,Groceries,True,bigbasket bangalore grocery,5
+NetflixDelhi2832,Entertainment,False,netflixdelhi2832,2
+Starbucks Hyderabad 1798,Food & Drinks,False,starbucks hyderabad 1798,3
+indigokolkata4417 booking,Travel,True,indigokolkata4417 booking,9
+card annual charges,Banking Charges,True,card annual charges,0
+late charges,Banking Charges,True,late charges,0
+RedBus Hyderabad 2104,Travel,False,redbus hyderabad 2104,9
+Water Bill Pune 4892,Bills & Recharge,False,water bill pune 4892,1
+dmart pune shopping,Groceries,True,dmart pune shopping,5
+vodafone bill,Bills & Recharge,True,vodafone bill,1
+redbus bangalore booking,Travel,True,redbus bangalore booking,9
+payment to ajio mumbai,Shopping,True,payment to ajio mumbai,8
+flipkart bangalore purchase,Shopping,True,flipkart bangalore purchase,8
+canva delhi service,Online Services,True,canva delhi service,7
+payment to flipkart chennai,Shopping,True,payment to flipkart chennai,8
+shell petrol fuel,Fuel,True,shell petrol fuel,4
+Indian Oil Bangalore 1029,Fuel,False,indian oil bangalore 1029,4
+DMart Pune 1444,Groceries,False,dmart pune 1444,5
+1mg chennai medical,Medical,True,1mg chennai medical,6
+Nature's Basket Pune 232,Groceries,False,nature s basket pune 232,5
+Reliance Fresh Pune 458,Groceries,False,reliance fresh pune 458,5
+indian oil petrol pump,Fuel,True,indian oil petrol pump,4
+id-zoom subscription subscription,Online Services,True,id zoom subscription subscription,7
+zoom subscription service,Online Services,True,zoom subscription service,7
+bigbask3t hyd3rabad grocery,Groceries,True,bigbask3t hyd3rabad grocery,5
+Microsoft 365 Kolkata 2716,Online Services,False,microsoft 365 kolkata 2716,7
+b@nk service charges,Banking Charges,True,b nk service charges,0
+Amazon Bangalore 2423,Shopping,False,amazon bangalore 2423,8
+nykaa chennai purchase,Shopping,True,nykaa chennai purchase,8
+id-nykaa chennai purchase,Shopping,True,id nykaa chennai purchase,8
+ajio mumbai 3813,Shopping,False,ajio mumbai 3813,8
+spencers hyderabad shopping,Groceries,True,spencers hyderabad shopping,5
+Fortis Delhi 4255,Medical,False,fortis delhi 4255,6
+card annual fee,Banking Charges,True,card annual fee,0
+starbucks delhi,Food & Drinks,True,starbucks delhi,3
+Bank Service Charge Delhi 1415,Banking Charges,False,bank service charge delhi 1415,0
+Air India Mumbai 937,Travel,False,air india mumbai 937,9
+jio recharge,Bills & Recharge,True,jio recharge,1
+starbucks kolkata,Food & Drinks,True,starbucks kolkata,3
+BigBasket Kolkata 400,Groceries,False,bigbasket kolkata 400,5
+IRCTC Chennai 3540,Travel,False,irctc chennai 3540,9
+reliance fresh shopping,Groceries,True,reliance fresh shopping,5
+card annual charges,Banking Charges,True,card annual charges,0
+indigo bangalore ride,Travel,True,indigo bangalore ride,9
+sonyliv mumbai subscription,Entertainment,True,sonyliv mumbai subscription,2
+Apollo Pharmacy Pune 3772,Medical,False,apollo pharmacy pune 3772,6
+indian oil fuel,Fuel,True,indian oil fuel,4
+BigBasket Delhi 253,Groceries,False,bigbasket delhi 253,5
+bigbask3t hyd3rabad shopping,Groceries,True,bigbask3t hyd3rabad shopping,5
+hotstar kolkata payment,Entertainment,True,hotstar kolkata payment,2
+amazon prime subscription,Entertainment,True,amazon prime subscription,2
+cardannualfeepune4243 fee,Banking Charges,True,cardannualfeepune4243 fee,0
+Canva Chennai 3967,Online Services,False,canva chennai 3967,7
+Microsoft 365 Kolkata 3009,Online Services,False,microsoft 365 kolkata 3009,7
+google cloud subscription,Online Services,True,google cloud subscription,7
+Amazon Chennai 1462,Shopping,False,amazon chennai 1462,8
+Air India Chennai 3407 txn,Travel,False,air india chennai 3407 txn,9
+irctc hyderabad ride,Travel,True,irctc hyderabad ride,9
+Spencers Kolkata 2030,Groceries,False,spencers kolkata 2030,5
+Amazon Bangalore 1734,Shopping,False,amazon bangalore 1734,8
+Amazon Prime Delhi 1977,Entertainment,False,amazon prime delhi 1977,2
+bookmyshowmumbai2618 subscription,Entertainment,True,bookmyshowmumbai2618 subscription,2
+atm withdrawal fee,Banking Charges,True,atm withdrawal fee,0
+id-spencers hyderabad shopping,Groceries,True,id spencers hyderabad shopping,5
+payment to ajio bangalore,Shopping,True,payment to ajio bangalore,8
+jio recharge,Bills & Recharge,True,jio recharge,1
+BigBasket Bangalore 3333,Groceries,False,bigbasket bangalore 3333,5
+apollo pharmacy medical,Medical,True,apollo pharmacy medical,6
+spencers hyderabad shopping,Groceries,True,spencers hyderabad shopping,5
+hp petrol petrol pump,Fuel,True,hp petrol petrol pump,4
+id-microsoft 365 service,Online Services,True,id microsoft 365 service,7
+googlecloudpune1729 subscription,Online Services,True,googlecloudpune1729 subscription,7
+payment to tatacliqbangalore4600,Shopping,True,payment to tatacliqbangalore4600,8
+id-indian oil petrol pump,Fuel,True,id indian oil petrol pump,4
+Jio Recharge Delhi 443,Bills & Recharge,False,jio recharge delhi 443,1
+fortis delhi pharmacy,Medical,True,fortis delhi pharmacy,6
+apollo pharmacy pharmacy,Medical,True,apollo pharmacy pharmacy,6
+BookMyShow Pune 1643,Entertainment,False,bookmyshow pune 1643,2
+redbus pune ride,Travel,True,redbus pune ride,9
+ATM Withdrawal Fee Pune 202,Banking Charges,False,atm withdrawal fee pune 202,0
+uber delhi ride,Travel,True,uber delhi ride,9
+bigbask3t d3lhi shopping,Groceries,True,bigbask3t d3lhi shopping,5
+irctcchennai2787 booking,Travel,True,irctcchennai2787 booking,9
+uber pune ride,Travel,True,uber pune ride,9
+googl3 cloud subscription,Online Services,True,googl3 cloud subscription,7
+Shell Petrol Pump Delhi 1620,Fuel,False,shell petrol pump delhi 1620,4
+HP Petrol Pump Pune 560,Fuel,False,hp petrol pump pune 560,4
+BigBasket Delhi 4877,Groceries,False,bigbasket delhi 4877,5
+payment to id-amazon bangalore,Shopping,True,payment to id amazon bangalore,8
+sonyliv chennai subscription,Entertainment,True,sonyliv chennai subscription,2
+air india booking,Travel,True,air india booking,9
+Ola Mumbai 2813,Travel,False,ola mumbai 2813,9
+ATM Withdrawal Fee Hyderabad 1135,Banking Charges,False,atm withdrawal fee hyderabad 1135,0
+Adobe Hyderabad 2247,Online Services,False,adobe hyderabad 2247,7
+google cloud subscription,Online Services,True,google cloud subscription,7
+apollo pharmacy medical,Medical,True,apollo pharmacy medical,6
+Microsoft 365 Chennai 2578,Online Services,False,microsoft 365 chennai 2578,7
+adobe chennai service,Online Services,True,adobe chennai service,7
+SonyLiv Delhi 1568,Entertainment,False,sonyliv delhi 1568,2
+bank service fee,Banking Charges,True,bank service fee,0
+bookmyshow chennai subscription,Entertainment,True,bookmyshow chennai subscription,2
+bigbasket pune shopping,Groceries,True,bigbasket pune shopping,5
+fortis kolkata medical,Medical,True,fortis kolkata medical,6
+PharmEasyKolkata2779,Medical,False,pharmeasykolkata2779,6
+microsoft 365 service,Online Services,True,microsoft 365 service,7
+amazon prime payment,Entertainment,True,amazon prime payment,2
+zoom subscription service,Online Services,True,zoom subscription service,7
+late charges,Banking Charges,True,late charges,0
+Zoom Subscription Hyderabad 754,Online Services,False,zoom subscription hyderabad 754,7
+atmwithdrawalfeedelhi1286 fee,Banking Charges,True,atmwithdrawalfeedelhi1286 fee,0
+max hospital pharmacy,Medical,True,max hospital pharmacy,6
+reliance fresh grocery,Groceries,True,reliance fresh grocery,5
+netflix kolkata payment,Entertainment,True,netflix kolkata payment,2
+late fee,Banking Charges,True,late fee,0
+Uber Pune 2658,Travel,False,uber pune 2658,9
+sonyliv delhi subscription,Entertainment,True,sonyliv delhi subscription,2
+IRCTC Bangalore 4798,Travel,False,irctc bangalore 4798,9
+Bank Service Charge Hyderabad 4300,Banking Charges,False,bank service charge hyderabad 4300,0
+air indi@ ride,Travel,True,air indi  ride,9
+ola delhi ride,Travel,True,ola delhi ride,9
+bigbasket delhi shopping,Groceries,True,bigbasket delhi shopping,5
+ajio kolkata purchase,Shopping,True,ajio kolkata purchase,8
+card annual charges,Banking Charges,True,card annual charges,0
+pharmeasy bangalore medical,Medical,True,pharmeasy bangalore medical,6
+bankservicechargebangalore4744 fee,Banking Charges,True,bankservicechargebangalore4744 fee,0
+bharat petroleum petrol pump,Fuel,True,bharat petroleum petrol pump,4
+nature'sbasketdelhi557 grocery,Groceries,True,nature sbasketdelhi557 grocery,5
+Amazon Prime Hyderabad 4601,Entertainment,False,amazon prime hyderabad 4601,2
+ola chennai booking,Travel,True,ola chennai booking,9
+Late Payment Fee Chennai 3505,Banking Charges,False,late payment fee chennai 3505,0
+bank service charges,Banking Charges,True,bank service charges,0
+payment to amazon pune,Shopping,True,payment to amazon pune,8
+hp petrol petrol pump,Fuel,True,hp petrol petrol pump,4
+pharmeasy kolkata pharmacy,Medical,True,pharmeasy kolkata pharmacy,6
+indian oil petrol pump,Fuel,True,indian oil petrol pump,4
+Apollo Ph@rm@cy Pune 3354,Medical,False,apollo ph rm cy pune 3354,6
+McDonalds Mumbai 3265,Food & Drinks,False,mcdonalds mumbai 3265,3
+bigbasket kolkata grocery,Groceries,True,bigbasket kolkata grocery,5
+pharmeasy kolkata pharmacy,Medical,True,pharmeasy kolkata pharmacy,6
+Hotstar Hyderabad 4708 txn,Entertainment,False,hotstar hyderabad 4708 txn,2
+dmart delhi shopping,Groceries,True,dmart delhi shopping,5
+reliance fresh shopping,Groceries,True,reliance fresh shopping,5
+amazon chennai purchase,Shopping,True,amazon chennai purchase,8
+Google Cloud Chennai 533,Online Services,False,google cloud chennai 533,7
+IRCTC Bangalore 3987,Travel,False,irctc bangalore 3987,9
+Reliance Fresh Hyderabad 979,Groceries,False,reliance fresh hyderabad 979,5
+Vodafon3 Bill Bangalor3 1792,Bills & Recharge,False,vodafon3 bill bangalor3 1792,1
+payment to amazon mumbai,Shopping,True,payment to amazon mumbai,8
+Myntra Hyderabad 4848,Shopping,False,myntra hyderabad 4848,8
+bigbasket delhi grocery,Groceries,True,bigbasket delhi grocery,5
+ola pune booking,Travel,True,ola pune booking,9
+canva bangalore service,Online Services,True,canva bangalore service,7
+adobe mumbai service,Online Services,True,adobe mumbai service,7
+water bill,Bills & Recharge,True,water bill,1
+shell petrol fuel,Fuel,True,shell petrol fuel,4
+Water Bill Kolkata 2613,Bills & Recharge,False,water bill kolkata 2613,1
+dmart bangalore grocery,Groceries,True,dmart bangalore grocery,5
+payment to id-nykaa pune,Shopping,True,payment to id nykaa pune,8
+BigBasket Kolkata 2549,Groceries,False,bigbasket kolkata 2549,5
+Indian Oil Hyderabad 1761,Fuel,False,indian oil hyderabad 1761,4
+netflix kolkata subscription,Entertainment,True,netflix kolkata subscription,2
+Ajio Bangalore 1453,Shopping,False,ajio bangalore 1453,8
+Vodafone Bill Chennai 2026 txn,Bills & Recharge,False,vodafone bill chennai 2026 txn,1
+bigbasket hyderabad grocery,Groceries,True,bigbasket hyderabad grocery,5
+irctc bangalore booking,Travel,True,irctc bangalore booking,9
+Indian Oil Bangalore 4058,Fuel,False,indian oil bangalore 4058,4
+sonyliv bangalore subscription,Entertainment,True,sonyliv bangalore subscription,2
+Ajio Delhi 3871,Shopping,False,ajio delhi 3871,8
+nature's basket grocery,Groceries,True,nature s basket grocery,5
+google cloud subscription,Online Services,True,google cloud subscription,7
+late charges,Banking Charges,True,late charges,0
+bigbasket bangalore shopping,Groceries,True,bigbasket bangalore shopping,5
+water bill,Bills & Recharge,True,water bill,1
+Airtel Recharge Delhi 3819,Bills & Recharge,False,airtel recharge delhi 3819,1
+myntra hyderabad purchase,Shopping,True,myntra hyderabad purchase,8
+spencers chennai grocery,Groceries,True,spencers chennai grocery,5
+BookMyShow Bangalore 3158,Entertainment,False,bookmyshow bangalore 3158,2
+zoom subscription service,Online Services,True,zoom subscription service,7
+Zomato Chennai 3209,Food & Drinks,False,zomato chennai 3209,3
+Myntra Bangalore 2483 txn,Shopping,False,myntra bangalore 2483 txn,8
+tata cliq purchase,Shopping,True,tata cliq purchase,8
+mak3mytrip pun3 booking,Travel,True,mak3mytrip pun3 booking,9
+microsoft 365 subscription,Online Services,True,microsoft 365 subscription,7
+bigbasket hyderabad shopping,Groceries,True,bigbasket hyderabad shopping,5
+makemytrip chennai ride,Travel,True,makemytrip chennai ride,9
+hp petrol petrol pump,Fuel,True,hp petrol petrol pump,4
+RedBus Mumbai 2334,Travel,False,redbus mumbai 2334,9
+PharmEasy Delhi 4714,Medical,False,pharmeasy delhi 4714,6
+sonyliv delhi subscription,Entertainment,True,sonyliv delhi subscription,2
+bookmyshow chennai subscription,Entertainment,True,bookmyshow chennai subscription,2
+PharmEasy Hyderabad 3137 txn,Medical,False,pharmeasy hyderabad 3137 txn,6
+Adobe Kolkata 4760,Online Services,False,adobe kolkata 4760,7
+zoom subscription subscription,Online Services,True,zoom subscription subscription,7
+Amazon Prime Pune 2320,Entertainment,False,amazon prime pune 2320,2
+google cloud service,Online Services,True,google cloud service,7
+dmart bangalore shopping,Groceries,True,dmart bangalore shopping,5
+Ajio Pune 716,Shopping,False,ajio pune 716,8
+canva hyderabad subscription,Online Services,True,canva hyderabad subscription,7
+amazon prime payment,Entertainment,True,amazon prime payment,2
+nyk@@ mumb@i purchase,Shopping,True,nyk   mumb i purchase,8
+fortis pune 993,Medical,False,fortis pune 993,6
+bharat petroleum petrol pump,Fuel,True,bharat petroleum petrol pump,4
+canva mumbai subscription,Online Services,True,canva mumbai subscription,7
+nature'sbasketkolkata2559 shopping,Groceries,True,nature sbasketkolkata2559 shopping,5
+atm withdrawal fee,Banking Charges,True,atm withdrawal fee,0
+BigBask3t Hyd3rabad 1690,Groceries,False,bigbask3t hyd3rabad 1690,5
+BookMyShowMumbai2618,Entertainment,False,bookmyshowmumbai2618,2
+microsoft 365 service,Online Services,True,microsoft 365 service,7
+max hospital medical,Medical,True,max hospital medical,6
+1mg hyderabad pharmacy,Medical,True,1mg hyderabad pharmacy,6
+shell petrol petrol pump,Fuel,True,shell petrol petrol pump,4
+PharmEasy Delhi 1250,Medical,False,pharmeasy delhi 1250,6
+Adobe Chennai 307,Online Services,False,adobe chennai 307,7
+Bank Service Charge Mumbai 3910,Banking Charges,False,bank service charge mumbai 3910,0
+atm withdrawal charges,Banking Charges,True,atm withdrawal charges,0
+apollo pharmacy pharmacy,Medical,True,apollo pharmacy pharmacy,6
+google cloud service,Online Services,True,google cloud service,7
+Max Hospital Chennai 3685,Medical,False,max hospital chennai 3685,6
+zomato delhi,Food & Drinks,True,zomato delhi,3
+Zomato Mumbai 405,Food & Drinks,False,zomato mumbai 405,3
+jio recharge,Bills & Recharge,True,jio recharge,1
+amazon pune purchase,Shopping,True,amazon pune purchase,8
+reliance fresh shopping,Groceries,True,reliance fresh shopping,5
+bigbasket chennai grocery,Groceries,True,bigbasket chennai grocery,5
+sonyliv delhi subscription,Entertainment,True,sonyliv delhi subscription,2
+ZomatoChennai2547,Food & Drinks,False,zomatochennai2547,3
+Microsoft 365 Chennai 814,Online Services,False,microsoft 365 chennai 814,7
+hotstar pune subscription,Entertainment,True,hotstar pune subscription,2
+burger king,Food & Drinks,True,burger king,3
+microsoft 365 subscription,Online Services,True,microsoft 365 subscription,7
+IndiGo Hyderabad 4489,Travel,False,indigo hyderabad 4489,9
+Sh3ll P3trol Pump Mumbai 1117,Fuel,False,sh3ll p3trol pump mumbai 1117,4
+l@te p@yment fee,Banking Charges,True,l te p yment fee,0
+PharmEasy Bangalore 1899,Medical,False,pharmeasy bangalore 1899,6
+Card Annual Fee Pune 1131,Banking Charges,False,card annual fee pune 1131,0
+Nature's Basket Pune 2809,Groceries,False,nature s basket pune 2809,5
+flipkart chennai purchase,Shopping,True,flipkart chennai purchase,8
+Uber Delhi 1588,Travel,False,uber delhi 1588,9
+irctc chennai booking,Travel,True,irctc chennai booking,9
+Indian Oil Chennai 4936,Fuel,False,indian oil chennai 4936,4
+nature's basket grocery,Groceries,True,nature s basket grocery,5
+bookmyshow chennai payment,Entertainment,True,bookmyshow chennai payment,2
+hotstar delhi payment,Entertainment,True,hotstar delhi payment,2
+Bank Service Charge Hyderabad 4663,Banking Charges,False,bank service charge hyderabad 4663,0
+Amazon Kolkata 1180,Shopping,False,amazon kolkata 1180,8
+adobe bangalore subscription,Online Services,True,adobe bangalore subscription,7
+microsoft 365 subscription,Online Services,True,microsoft 365 subscription,7
+id-1mg kolkata medical,Medical,True,id 1mg kolkata medical,6
+Netflix Chennai 573,Entertainment,False,netflix chennai 573,2
+Bharat Petroleum Kolkata 4990,Fuel,False,bharat petroleum kolkata 4990,4
+Starbucks Delhi 1811,Food & Drinks,False,starbucks delhi 1811,3
+ID-Bank Service Charge Delhi 4674,Banking Charges,False,id bank service charge delhi 4674,0
+Airtel Recharge Bangalore 2246,Bills & Recharge,False,airtel recharge bangalore 2246,1
+Bank Service Charge Pune 1042,Banking Charges,False,bank service charge pune 1042,0
+vodafone bill,Bills & Recharge,True,vodafone bill,1
+id-irctc mumbai booking,Travel,True,id irctc mumbai booking,9
+payment to myntra delhi,Shopping,True,payment to myntra delhi,8
+bharat petroleum fuel,Fuel,True,bharat petroleum fuel,4
+atm withdrawal fee,Banking Charges,True,atm withdrawal fee,0
+Reliance Fresh Hyderabad 917,Groceries,False,reliance fresh hyderabad 917,5
+microsoft 365 service,Online Services,True,microsoft 365 service,7
+pharmeasy delhi medical,Medical,True,pharmeasy delhi medical,6
+payment to myntra kolkata,Shopping,True,payment to myntra kolkata,8
+burger king,Food & Drinks,True,burger king,3
+irctc chennai booking,Travel,True,irctc chennai booking,9
+Burger King Delhi 1226,Food & Drinks,False,burger king delhi 1226,3
+adobe mumbai subscription,Online Services,True,adobe mumbai subscription,7
+sonyliv chennai payment,Entertainment,True,sonyliv chennai payment,2
+1mg mumbai medical,Medical,True,1mg mumbai medical,6
+payment to amazon bangalore,Shopping,True,payment to amazon bangalore,8
+Swiggy Pune 1486,Food & Drinks,False,swiggy pune 1486,3
+bookmyshow chennai subscription,Entertainment,True,bookmyshow chennai subscription,2
+Zoom Subscription Kolkata 3600,Online Services,False,zoom subscription kolkata 3600,7
+Spencers Kolkata 974,Groceries,False,spencers kolkata 974,5
+flipkart mumbai purchase,Shopping,True,flipkart mumbai purchase,8
+Nature's Basket Delhi 1812,Groceries,False,nature s basket delhi 1812,5
+1mg bangalore pharmacy,Medical,True,1mg bangalore pharmacy,6
+fortis hyderabad medical,Medical,True,fortis hyderabad medical,6
+netflix chennai subscription,Entertainment,True,netflix chennai subscription,2
+Fortis Bangalore 69,Medical,False,fortis bangalore 69,6
+canva kolkata service,Online Services,True,canva kolkata service,7
+apollo pharmacy medical,Medical,True,apollo pharmacy medical,6
+air india ride,Travel,True,air india ride,9
+1mg kolkata medical,Medical,True,1mg kolkata medical,6
+Indian Oil Hyderabad 4507,Fuel,False,indian oil hyderabad 4507,4
+indian oil petrol pump,Fuel,True,indian oil petrol pump,4
+SonyLiv Delhi 4667,Entertainment,False,sonyliv delhi 4667,2
+Uber Mumbai 4977,Travel,False,uber mumbai 4977,9
+sonyliv pune subscription,Entertainment,True,sonyliv pune subscription,2
+microsoft 365 subscription,Online Services,True,microsoft 365 subscription,7
+Canva Bangalore 2245,Online Services,False,canva bangalore 2245,7
+apollo ph@rm@cy medical,Medical,True,apollo ph rm cy medical,6
+Tata Cliq Bangalore 704,Shopping,False,tata cliq bangalore 704,8
+irctc mumbai booking,Travel,True,irctc mumbai booking,9
+McDonalds Bangalore 4252,Food & Drinks,False,mcdonalds bangalore 4252,3
+Hotstar Pune 4480,Entertainment,False,hotstar pune 4480,2
+Nykaa Chennai 925,Shopping,False,nykaa chennai 925,8
+swiggy kolkata,Food & Drinks,True,swiggy kolkata,3
+bookmyshow pune payment,Entertainment,True,bookmyshow pune payment,2
+atm withdrawal charges,Banking Charges,True,atm withdrawal charges,0
+MakeMyTrip Hyderabad 3407,Travel,False,makemytrip hyderabad 3407,9
+hp petrol petrol pump,Fuel,True,hp petrol petrol pump,4
+payment to nykaa mumbai,Shopping,True,payment to nykaa mumbai,8
+reliance fresh shopping,Groceries,True,reliance fresh shopping,5
+Uber Delhi 4133,Travel,False,uber delhi 4133,9
+shell petrol petrol pump,Fuel,True,shell petrol petrol pump,4
+Airtel Recharge Delhi 4810,Bills & Recharge,False,airtel recharge delhi 4810,1
+nature's basket shopping,Groceries,True,nature s basket shopping,5
+Bank Service Charge Pune 750,Banking Charges,False,bank service charge pune 750,0
+hp petrol fuel,Fuel,True,hp petrol fuel,4
+Hotstar Mumbai 4028,Entertainment,False,hotstar mumbai 4028,2
+dmart chennai 54,Groceries,False,dmart chennai 54,5
+N3tflix Ch3nnai 2375,Entertainment,False,n3tflix ch3nnai 2375,2
+RedBus Pune 2588,Travel,False,redbus pune 2588,9
+amazon bangalor3 purchase,Shopping,True,amazon bangalor3 purchase,8
+IndianOilMumbai2620,Fuel,False,indianoilmumbai2620,4
+Max Hospital Pune 2327,Medical,False,max hospital pune 2327,6
+irctc kolkata booking,Travel,True,irctc kolkata booking,9
+BigB@sket Chenn@i 1358,Groceries,False,bigb sket chenn i 1358,5
+Zomato Chennai 1072,Food & Drinks,False,zomato chennai 1072,3
+El3ctricity Bill Hyd3rabad 688,Bills & Recharge,False,el3ctricity bill hyd3rabad 688,1
+atm withdrawal fee,Banking Charges,True,atm withdrawal fee,0
+MakeMyTripChennai3029,Travel,False,makemytripchennai3029,9
+Bank Service Charge Mumbai 4771,Banking Charges,False,bank service charge mumbai 4771,0
+hp petrol fuel,Fuel,True,hp petrol fuel,4
+Jio Recharge Pune 304,Bills & Recharge,False,jio recharge pune 304,1
+hp petrol petrol pump,Fuel,True,hp petrol petrol pump,4
+payment to flipkart delhi,Shopping,True,payment to flipkart delhi,8
+ID-Fortis Bangalore 2421,Medical,False,id fortis bangalore 2421,6
+Swiggy Mumb@i 681,Food & Drinks,False,swiggy mumb i 681,3
+irctc hyderabad booking,Travel,True,irctc hyderabad booking,9
+bharat petroleum fuel,Fuel,True,bharat petroleum fuel,4
+bookmyshow chennai payment,Entertainment,True,bookmyshow chennai payment,2
+id-vodafone bill,Bills & Recharge,True,id vodafone bill,1
+IndiGo Kolkata 2952,Travel,False,indigo kolkata 2952,9
+Shell Petrol Pump Delhi 3321,Fuel,False,shell petrol pump delhi 3321,4
+ajio bangalore purchase,Shopping,True,ajio bangalore purchase,8
+netflix pune subscription,Entertainment,True,netflix pune subscription,2
+microsoft 365 service,Online Services,True,microsoft 365 service,7
+indian oil fuel,Fuel,True,indian oil fuel,4
+ID-Swiggy Kolkata 154,Food & Drinks,False,id swiggy kolkata 154,3
+Shell Petrol Pump Mumbai 1920,Fuel,False,shell petrol pump mumbai 1920,4
+BookMyShow Mumbai 4659,Entertainment,False,bookmyshow mumbai 4659,2
+water bill,Bills & Recharge,True,water bill,1
+card annual charges,Banking Charges,True,card annual charges,0
+ID-Amazon Prime Delhi 2526,Entertainment,False,id amazon prime delhi 2526,2
+Swiggy Mumbai 4932,Food & Drinks,False,swiggy mumbai 4932,3
+bigbasket bangalore grocery,Groceries,True,bigbasket bangalore grocery,5
+card annual fee,Banking Charges,True,card annual fee,0
+card annual charges,Banking Charges,True,card annual charges,0
+dmart mumbai shopping,Groceries,True,dmart mumbai shopping,5
+bank service fee,Banking Charges,True,bank service fee,0
+max hospital medical,Medical,True,max hospital medical,6
+IRCTCDelhi1460,Travel,False,irctcdelhi1460,9
+McDonalds Delhi 661,Food & Drinks,False,mcdonalds delhi 661,3
+zoom subscription service,Online Services,True,zoom subscription service,7
+id-vodafone bill,Bills & Recharge,True,id vodafone bill,1
+ccd kolkata,Food & Drinks,True,ccd kolkata,3
+apollo ph@rm@cy pharmacy,Medical,True,apollo ph rm cy pharmacy,6
+Hotstar Delhi 4250,Entertainment,False,hotstar delhi 4250,2
+Vodafone Bill Hyderabad 1243,Bills & Recharge,False,vodafone bill hyderabad 1243,1
+bharat petroleum fuel,Fuel,True,bharat petroleum fuel,4
+hp petrol petrol pump,Fuel,True,hp petrol petrol pump,4
+ola kolkata ride,Travel,True,ola kolkata ride,9
+atm withdrawal fee,Banking Charges,True,atm withdrawal fee,0
+bank service fee,Banking Charges,True,bank service fee,0
+microsoft 365 subscription,Online Services,True,microsoft 365 subscription,7
+payment to flipkart hyderabad,Shopping,True,payment to flipkart hyderabad,8
+adobe hyderabad 1608,Online Services,False,adobe hyderabad 1608,7
+redbus mumbai booking,Travel,True,redbus mumbai booking,9
+nature's basket grocery,Groceries,True,nature s basket grocery,5
+hotstar hyderabad subscription,Entertainment,True,hotstar hyderabad subscription,2
+ATM Withdrawal Fee Bangalore 620,Banking Charges,False,atm withdrawal fee bangalore 620,0

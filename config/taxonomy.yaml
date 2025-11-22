@@ -1,0 +1,40 @@
+# Transaction Category Taxonomy Configuration
+# Update this file to add/modify categories without code changes
+
+categories:
+  - name: "Food & Drinks"
+    keywords: ["swiggy", "zomato", "uber eats", "dominos", "mcdonalds", "starbucks", "restaurant", "cafe", "food"]
+    
+  - name: "Shopping"
+    keywords: ["amazon", "flipkart", "myntra", "ajio", "nykaa", "mall", "store", "shopping"]
+    
+  - name: "Groceries"
+    keywords: ["dmart", "bigbasket", "zepto", "blinkit", "grofers", "supermarket", "vegetables", "grocery"]
+    
+  - name: "Fuel"
+    keywords: ["petrol", "diesel", "fuel", "hp", "bharat petroleum", "indian oil", "shell", "gas"]
+    
+  - name: "Travel"
+    keywords: ["uber", "ola", "flight", "train", "bus", "hotel", "airbnb", "booking", "travel"]
+    
+  - name: "Bills & Recharge"
+    keywords: ["electricity", "water bill", "gas bill", "recharge", "paytm", "phonepe", "mobile"]
+    
+  - name: "Entertainment"
+    keywords: ["netflix", "amazon prime", "spotify", "youtube", "hotstar", "movie", "theatre", "pvr"]
+    
+  - name: "Medical"
+    keywords: ["pharmacy", "hospital", "doctor", "clinic", "medical", "apollo", "fortis", "medicine"]
+    
+  - name: "Online Services"
+    keywords: ["subscription", "cloud", "hosting", "domain", "aws", "google", "microsoft", "zoom"]
+    
+  - name: "Banking Charges"
+    keywords: ["bank charge", "annual fee", "interest", "penalty", "atm fee", "service charge"]
+
+    
+# Configuration Settings
+settings:
+  confidence_threshold: 0.70
+  fallback_category: "Uncategorized"
+  enable_keyword_fallback: true
